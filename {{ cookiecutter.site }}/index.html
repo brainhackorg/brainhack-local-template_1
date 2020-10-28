@@ -23,15 +23,15 @@
 			<header>
 				<h1>Brainhack {{ cookiecutter.site }}</h1>
 				<p>November 13th - 15th, 2019</p>
-				<p>Dell Medical School, 1601 Trinity St, Austin, TX 78701, USA</p>
+				<p>{{ cookiecutter.address }}</p>
 				<ul class="actions">
 					<li><a href="#schedule" class="arrow scrolly"><span class="label">Next</span></a></li>
 				</ul>
 			</header>
 			<div class="content" style="padding: 0">
-				<iframe style="border-width:0; height: 100vh;" width="100%" height="100" frameborder="0" scrolling="no"
-					src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZe22kZq1RIYR4Ed2g630JxE&key=AIzaSyD7hHqcPIoFPfouRdLL_xrGKd6ytU0uz0s"
-					allowfullscreen></iframe>
+				<iframe
+					style="border-width:0; height: 100vh;" width="100%" height="100" frameborder="0" scrolling="no" allowfullscreen
+					src="https://maps.google.com/maps?q={{ cookiecutter.address | urlencode }}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			</div>
 		</section>
 
@@ -172,17 +172,18 @@
 				<ul class="items">
 					<li>
 						<h3>Email</h3>
-						<a href="#">information@untitled.ext</a>
+						<a href="#">{{ cookiecutter.email }}</a>
 					</li>
 					<li>
 						<h3>Twitter</h3>
-						<a href="https://twitter.com/brainhackorg">@brainhackorg</a>
+						<a href="https://twitter.com/{{ cookiecutter.twitter }}">@{{ cookiecutter.twitter }}</a>
 					</li>
 					<li>
 						<h3>Organizers</h3>
 						<ul>
-							<li>John Doe</li>
-							<li>Mary Doe</li>
+							{% for organizer in cookiecutter.organizers %}
+								<li>{{ organizer }}</li>
+							{% endfor %}
 						</ul>
 					</li>
 				</ul>
