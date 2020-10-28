@@ -3,8 +3,10 @@
     "address": "1000 Street Road, City",
     "email": "contact@mybrainhack.org",
     "twitter": "ourbrainhack",
-    "organizers": [
-        "Mary Doe",
-        "John Doe"
-    ]
+    "organizers": {
+        "names": [
+            "Mary Doe",
+            "John Doe"
+        ]
+    }
 }
