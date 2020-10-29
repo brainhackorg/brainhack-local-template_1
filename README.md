@@ -19,4 +19,4 @@ The filled information will give a kick-off for your brand new Brainhack website
 2) You can add more information to the Information section, if required. However, please make sure to keep the Code of Conduct link, so everyone participating is aware of it;
 3) Update the Projects section, ensuring that all participants have access to the projects that are intented to be worked on during the Brainhack;
 4) Get in touch: update your contact information, adding the channels that will be used during Brainhack. Also update the organizers list;
-5) Add the institutions that are supporting this local Brainhack
+5) Add the institutions that are supporting this local Brainhack.
